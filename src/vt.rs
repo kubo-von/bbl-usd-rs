@@ -1,7 +1,7 @@
 use std::ops::IndexMut;
 
 use crate::{ffi, sdf, tf};
-use glam::{DVec3, Vec2, Vec3, Vec4, Mat2, DMat2, Mat3, DMat3, Mat4, DMat4};
+pub use glam::{DVec3, Vec2, Vec3, Vec4, Mat2, DMat2, Mat3, DMat3, Mat4, DMat4};
 
 pub struct TokenArray {
     pub(crate) ptr: *mut ffi::vt_TokenArray_t,
